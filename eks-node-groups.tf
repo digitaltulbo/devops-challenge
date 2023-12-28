@@ -69,7 +69,7 @@ resource "aws_eks_node_group" "nodes_general" {
     desired_size = 2
 
     # Maximum number of worker nodes.
-    max_size = 2
+    max_size = 10
 
     # Minimum number of worker nodes.
     min_size = 2
@@ -89,7 +89,7 @@ resource "aws_eks_node_group" "nodes_general" {
   force_update_version = false
 
   # List of instance types associated with the EKS Node Group
-  instance_types = ["t3.small"]
+  instance_types = ["t3.large"]
 
   labels = {
     role = "nodes-general"

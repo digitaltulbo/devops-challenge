@@ -1,6 +1,6 @@
 terraform {
 
-# terraform 클라우드는 사용하지 않을 것이므로 주석
+  # terraform 클라우드는 사용하지 않을 것이므로 주석
   # cloud {
   #   workspaces {
   #     name = "devlink-terraform-eks"

@@ -1,0 +1,13 @@
+controller:
+  replicas: 1
+
+server:
+  replicas: 1
+  service:
+    type: LoadBalancer
+    annotations:
+      service.beta.kubernetes.io/aws-load-balancer-type: "nlb" # 로드밸런서 타입을 nlb로 지정
+repoServer:
+  replicas: 1
+applicationSet:
+  replicaCount: 1
