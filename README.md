@@ -1,7 +1,7 @@
 # devops-challenge
 ## EKS 프로비저닝을 위한 Terraform
 
-수정해야 할 사항
+수정/추가해야 할 사항
 1. 시큐리티그룹 eks-cluster 인바운드 규칙편집 -> 모든 트래픽 열기 (0.0.0.0/0)
 2. Autoscailing 그룹 생성
     동적 크기 조정 정책, 기본설정으로 생성 (평균 CPU 사용률 50, 300초), 활성
